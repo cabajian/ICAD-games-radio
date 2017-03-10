@@ -45,7 +45,7 @@ function rpsImg() {
   userImg.style.display = "inline";
   compImg.style.display = "inline";
   userImg.src = "img/" + userMove.value.toLowerCase() + ".png";
-  compImg.src = "img/" + compMove + ".png";
+  compImg.src = "img/" + compMove.toLowerCase() + ".png";
 }
 
 function decision(move1, move2) {
