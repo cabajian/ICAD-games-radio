@@ -1,0 +1,198 @@
+/* =================================
+  Base Element Styles
+  ==================================== */
+
+  * {
+   box-sizing: border-box;
+ }
+
+ html {
+   height: 100%;
+ }
+
+ body {
+   font-family: 'Varela Round', sans-serif;
+   line-height: 1.6;
+   color: #125B84;
+   height: 100%;
+ }
+
+ p {
+   font-size: .95em;
+ }
+
+ h2,
+ h3,
+ a {
+   color: #093a58;
+ }
+
+ h2,
+ h3 {
+   margin-top: 0;
+ }
+
+ a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  outline-color: #125B84;
+  margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder {
+ font-size: .8em;
+ text-align: center;
+}
+
+button {
+  background-color: #125B84;
+  border-radius: 28px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 20px;
+  display: block;
+  margin: auto;
+}
+
+/* =================================
+Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.main-nav {
+  margin: 0;
+  font-weight: 600;
+}
+
+.name a, .main-nav a {
+ text-align: center;
+ display: block;
+ padding: 5px 15px;
+}
+
+.name a {
+  padding-bottom: 10px;
+}
+
+.main-nav a {
+ color: #125B84;
+ text-transform: uppercase;
+}
+
+.main-nav a:hover {
+ color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.sf {
+ min-height: 100%;
+ margin-bottom: -115px;
+}
+
+.sf:after {
+  content: "";
+  display: block;
+  height: 115px;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  background: rgb(255,255,255);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  z-index: 1;
+}
+
+.container {
+ width: 80%;
+ max-width: 1150px;
+ margin: auto;
+}
+
+.push {
+  padding-top: 139px;
+}
+
+.banner {
+  margin-bottom: 50px;
+  padding: 30px 0 30px;
+  text-align: center;
+  color: #fff;
+  background: #125B84;
+  background: linear-gradient(to bottom, rgba(18, 91, 132, .85) 50%, rgb(232, 246, 255)), url('../img/dice-banner.jpg');
+  background-size: cover;
+}
+
+.col {
+ padding: 0 15px;
+ margin: auto;
+ text-align: center;
+}
+
+.feat-img {
+ border-radius: 25px;
+}
+
+.main-footer {
+  margin-top: 30px;
+  padding: 30px 0;
+  height: 85px;
+  background: linear-gradient(to top, rgba(18, 91, 132, .75) 96%, rgba(9, 39, 56, 1));
+  color: #fff;
+  text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+ width: 200px;
+ filter: drop-shadow(0 3px 5px #114e70
+  );
+}
+
+.headline {
+  padding-top: 5px;
+  margin: 0 0 -10px;
+  text-shadow: 1px 1px 2px #555;
+}
+
+.tagline {
+ font-size: 1.2em;
+ text-shadow: 1px 1px 1px #555;
+}
+
+label {
+  margin-right: 10px;
+}
+
+#userImg, #compImg {
+  height: 50px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+#userOutput, #compOutput {
+  display: inline-block;
+}
+
+#firstDice, #secondDice {
+  height: 50px;
+}
